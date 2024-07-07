@@ -1,6 +1,3 @@
-Here is the full updated CSS for the `Services` component, including the styling for the new sort buttons:
-
-```css
 .services {
   padding: 2rem;
   background: #fff;
@@ -95,7 +92,8 @@ Here is the full updated CSS for the `Services` component, including the styling
   font-size: 1.2rem;
 }
 
-.btn-watch, .btn-started {
+.btn-watch,
+.btn-started {
   padding: 0.75rem 1.5rem;
   margin: 0.75rem;
   border: none;
@@ -106,7 +104,8 @@ Here is the full updated CSS for the `Services` component, including the styling
   font-size: 1rem;
 }
 
-.btn-watch:hover, .btn-started:hover {
+.btn-watch:hover,
+.btn-started:hover {
   background-color: #0e0e0e;
   color: white;
 }
@@ -169,4 +168,15 @@ Here is the full updated CSS for the `Services` component, including the styling
 
 .care-tip-item:last-child {
   border-bottom: none;
+}
+
+/* Updated button styles */
+.sort-button-container .btn--primary {
+  background-color: #e50f85;
+  color: white;
+}
+
+.sort-button-container .btn--primary:hover {
+  background-color: #0e0e0e;
+  color: white;
 }

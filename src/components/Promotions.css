@@ -1,0 +1,185 @@
+/* Promotions.css */
+
+.promotions {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .promo-banner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-text {
+    background-color: #e50f85;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .promo-discounts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .discount-link {
+    text-decoration: none;
+  }
+  
+  .discount-button {
+    background-color: #e50f85;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .promo-cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .promo-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 1rem;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promo-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .promo-card-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-card-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 0.5rem;
+  }
+  
+  .new-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e50f85;
+  }
+  
+  .promo-link {
+    text-decoration: none;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-container {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .faq-item {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-answer {
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  .faq-toggle {
+    font-size: 1.5rem;
+  }
+  
+  /* Chat Section */
+  .chat-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .chat-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chat-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .chat-button {
+    background-color: #e50f85;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  

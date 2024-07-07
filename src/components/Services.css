@@ -1,0 +1,172 @@
+Here is the full updated CSS for the `Services` component, including the styling for the new sort buttons:
+
+```css
+.services {
+  padding: 2rem;
+  background: #fff;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.sort-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  margin-bottom: 3rem;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel-caption {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.carousel-caption a {
+  text-decoration: none;
+  color: #333;
+}
+
+.carousel-caption a:hover {
+  color: #e50f85;
+}
+
+.tutorial-section {
+  background-color: #e50f85;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+}
+
+.tutorial-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tutorial-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tutorial-image {
+  flex: 1;
+}
+
+.tutorial-image-element {
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid white;
+}
+
+.tutorial-text {
+  flex: 2;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.tutorial-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.btn-watch, .btn-started {
+  padding: 0.75rem 1.5rem;
+  margin: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #e50f85;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-watch:hover, .btn-started:hover {
+  background-color: #0e0e0e;
+  color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  .tutorial-content {
+    flex-direction: column;
+  }
+
+  .tutorial-text {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .tutorial-image-element {
+    margin-bottom: 1rem;
+  }
+}
+
+.care-tips {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.care-tips-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.care-tips-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.care-tips-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.care-tip-item {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.care-tip-item:hover {
+  background-color: #e50f85;
+  color: white;
+}
+
+.care-tip-item:last-child {
+  border-bottom: none;
+}

@@ -15,7 +15,12 @@
   justify-content: center;
   font-size: 3rem;
 }
-
+.goog-te-gadget:nth-of-type(n+2) {
+  display: none;
+}
+.goog-te-combo:nth-of-type(n+2) {
+  display: none;
+} 
 .services {
  
   background-position: center;

@@ -6,6 +6,8 @@ import Bots from './bots'; // Import the chatbot component
 
 function Promotions() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [name, setName] = useState('');
+  const [loyaltyInfo, setLoyaltyInfo] = useState(null);
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -25,6 +27,27 @@ function Promotions() {
       answer: "Shipping usually takes 5-7 business days within the continental United States. International shipping times may vary."
     }
   ];
+
+  const handleLoyaltyCheck = (e) => {
+    e.preventDefault();
+    // Generate random data for demonstration purposes
+    const generateRandomLoyaltyInfo = () => {
+      const years = Math.floor(Math.random() * 10) + 1;
+      const purchases = Math.floor(Math.random() * 100) + 1;
+      return { years, purchases };
+    };
+
+    const info = generateRandomLoyaltyInfo();
+    setLoyaltyInfo(info);
+  };
+
+  const getDiscount = (info) => {
+    if (!info) return 0;
+    if (info.purchases >= 50) return 30;
+    if (info.purchases >= 20) return 20;
+    if (info.purchases >= 10) return 10;
+    return 0;
+  };
 
   return (
     <div className="promotions">
@@ -92,6 +115,22 @@ function Promotions() {
             <Button buttonStyle="btn--primary" buttonSize="btn--large">SHOP NOW</Button>
           </Link>
         </div>
+      </div>
+      <div className="loyalty-program">
+        <h2> Our Loyalty Program to get a discount </h2>
+        <form onSubmit={handleLoyaltyCheck} className="loyalty-form">
+          <label>
+            Enter your name:
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+          </label>
+          <button type="submit">Check Loyalty Status</button>
+        </form>
+        {loyaltyInfo && (
+          <div className="loyalty-info">
+            <p>{name}, you have been with us for {loyaltyInfo.years} years and made {loyaltyInfo.purchases} purchases.</p>
+            <p>Congratulations! You are eligible for a {getDiscount(loyaltyInfo)}% discount on your next purchase.</p>
+          </div>
+        )}
       </div>
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>

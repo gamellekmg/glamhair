@@ -18,10 +18,17 @@ h1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1120px;
-  width: 90%;
+  max-width: 1320px;
+  width: 100%;
   margin: 0 auto;
 }
+.cards__text {
+  font-size: 1.5rem; /* Ajuster la taille du texte selon vos besoins */
+  line-height: 1.6; /* Ajuster l'interligne pour une meilleure lisibilité */
+  text-align: center; /* Centrer le texte */
+  margin: 20px 0; /* Ajouter des marges si nécessaire */
+}
+
 
 .cards__wrapper {
   position: relative;
@@ -138,6 +145,8 @@ h1 {
 .purpose-text {
   flex: 1;
   padding-right: 20px;
+  font-size: 1.5rem; /* Ajuster la taille du texte */
+  line-height: 1.6;  /* Optionnel: ajuster l'interligne pour une meilleure lisibilité */
 }
 
 .purpose-image {

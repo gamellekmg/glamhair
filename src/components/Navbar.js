@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FaUser, FaCartArrowDown, FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { useCart } from './CartContext';
+import TranslateButton from './TranslateButton'; // Import the TranslateButton component
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const { cartItems } = useCart();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -61,11 +64,15 @@ function Navbar() {
           <button type='submit'>Search</button>
         </form>
         <div className='nav-cart'>
-          <FaShoppingCart />
+          <Link to='/cart'>
+            <FaShoppingCart />
+            <span className='cart-count'>{cartItems.length}</span>
+          </Link>
         </div>
         <Link className='nav-links hide'><FaHeart /></Link>
         <Link className='nav-links hide'><FaUser /></Link>
         <Link className='nav-links hide'><FaCartArrowDown /></Link>
+        <div id="google_translate_element" className='bg-white'></div>
       </div>
     </nav>
   );

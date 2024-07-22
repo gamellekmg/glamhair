@@ -72,7 +72,11 @@ function Navbar() {
         <Link className='nav-links hide'><FaHeart /></Link>
         <Link className='nav-links hide'><FaUser /></Link>
         <Link className='nav-links hide'><FaCartArrowDown /></Link>
+<<<<<<< HEAD
         <TranslateButton /> {/* Add the translate button here */}
+=======
+        <div id="google_translate_element" className='bg-white'></div>
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
       </div>
     </nav>
   );

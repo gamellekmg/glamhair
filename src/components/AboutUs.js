@@ -4,7 +4,11 @@ import './AboutUs.css';
  
 
 function AboutUs() {
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
   return (
     <div className="about-us">
       <div className="about-us-section">

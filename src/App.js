@@ -12,16 +12,45 @@ import ConsultationBooking from './components/ConsultationBooking';
 import Cart from './components/Cart';
 import { CartProvider } from './components/CartContext';
 import Checkout from './components/Checkout';
+<<<<<<< HEAD
 
+=======
+import ErrorBoundary from './components/ErrorBoundary';
+import { useEffect } from "react";
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
 
 
 
 
 import './styles/App.css';
 
-function App() {
+const App = () => {
+  const googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  };
+  useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
   return (
+<<<<<<< HEAD
     
+=======
+    <>
+   
+    <ErrorBoundary>
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
     <CartProvider>
     <Router>
       <div className="App">
@@ -43,9 +72,17 @@ function App() {
       </div>
     </Router>
     </CartProvider>
+<<<<<<< HEAD
    
     
+=======
+    </ErrorBoundary>
+     
+    </>
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
   );
 }
+ 
+
 
 export default App;

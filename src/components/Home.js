@@ -5,7 +5,10 @@ import Video from '../components/Headervid';
 import Partner from '../components/Partner';
 import Bots from '../components/bots';
 import IntroGuide from './IntroGuide';
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
 
 function Home() {
   useEffect(() => {

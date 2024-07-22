@@ -1,25 +1,26 @@
-import React, { Component } from "react"
-import Disqus from "disqus-react"
+import React from 'react';
 
-export default class extends Component {
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error("Erreur capturée par ErrorBoundary:", error, errorInfo);
+  }
+
   render() {
-    const disqusShortname = "gokart-1"
-    const disqusConfig = {
-      url: "http://localhost:3000",
-      identifier: "article-id",
-      title: "Event racing"
+    if (this.state.hasError) {
+      return <h1>Une erreur s'est produite.</h1>;
     }
 
-    return (
-      <div className="article-container container">
-        <br></br>
-        <h3>Event Community discussion</h3>
-
-        <Disqus.DiscussionEmbed
-          shortname={disqusShortname}
-          config={disqusConfig}
-        />
-      </div>
-    )
+    return this.props.children; 
   }
 }
+
+export default ErrorBoundary;

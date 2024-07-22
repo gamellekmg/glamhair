@@ -9,7 +9,10 @@ body {
 iframe#webpack-dev-server-client-overlay {
   display: none;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0acc62ca4ce896654f87a2ccfc9bffbbe340971
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

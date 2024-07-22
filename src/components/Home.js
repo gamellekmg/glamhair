@@ -1,9 +1,11 @@
 import React, { useEffect} from 'react';
-import '../styles/App.css';
+import './App.css';
 import Cards from '../components/Cards';
 import Video from '../components/Headervid';
 import Partner from '../components/Partner';
 import Bots from '../components/bots';
+import IntroGuide from './IntroGuide';
+
 
 function Home() {
   useEffect(() => {
@@ -13,7 +15,8 @@ function Home() {
   return (
     
     <>
-      <Video videoUrl={'/videos/homevideo.mov'} speech={"What are you waiting for?"} btntxt={"Get Your Wig"} />
+      <Video videoUrl={require('./videos/homevideo.mov')} speech={"What are you waiting for?"} btntxt={"Get Your Wig"} />
+      <IntroGuide /> 
       <Cards />
       <Partner />
       <Bots />

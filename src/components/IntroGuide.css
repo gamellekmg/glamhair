@@ -1,0 +1,51 @@
+/* IntroGuide.css */
+.intro-guide {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .guide-header {
+    background-color: #e50f85;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 1rem; /* Adjust this value to increase the size at the bottom */
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .guide-header h2 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .guide-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .guide-content h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .guide-content ul {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .guide-content button {
+    background-color: #e50f85;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,38 @@
+.tutorial-videos-container {
+    padding: 4rem; /* Increase padding for a larger look */
+    background: #e50f85; /* White background */
+    color: #000; /* Pink text */
+    text-align: center;
+  }
+  
+  .tutorial-videos-container h1 {
+    font-size: 3rem; /* Increase font size */
+    margin-bottom: 2rem; /* Increase margin for better spacing */
+    font-weight: bold; /* Make the text bold */
+    color: #000;
+  }
+  
+  .tutorial-videos-container p {
+    font-size: 1.5rem; /* Increase font size */
+    margin-top: 1rem; /* Add margin top for spacing */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .video-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Increase gap for better spacing */
+  }
+  
+  .video-links a {
+    color: #fff; /* Pink link color */
+    text-decoration: none;
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .video-links a:hover {
+    text-decoration: underline;
+  }
+  

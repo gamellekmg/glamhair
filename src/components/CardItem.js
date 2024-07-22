@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './CardItem.css';
 import Button from 'react-bootstrap/Button';
 
 import Container from 'react-bootstrap/esm/Container';
